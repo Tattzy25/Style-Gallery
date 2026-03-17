@@ -32,9 +32,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, shadowsIntoLight.variable, unbounded.variable)}
+      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, shadowsIntoLight.variable, unbounded.variable, "bg-transparent")}
     >
-      <body className="!bg-transparent">
+      <body className="!bg-transparent" style={{ background: "transparent" }}>
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
       </body>

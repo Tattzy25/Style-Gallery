@@ -119,12 +119,17 @@
   * {
     @apply border-border outline-ring/50;
     }
+  html,
   body {
-    @apply text-foreground;
-    }
-  html {
-    @apply font-sans;
-    }
+    background: transparent !important;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    @apply text-foreground font-sans;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }
 
 @keyframes shimmer {
