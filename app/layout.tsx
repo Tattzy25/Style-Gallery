@@ -34,7 +34,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, shadowsIntoLight.variable, unbounded.variable, "bg-transparent")}
     >
-      <body className="!bg-transparent" style={{ background: "transparent" }}>
+      <body className="bg-transparent" style={{ background: "transparent" }}>
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
       </body>
