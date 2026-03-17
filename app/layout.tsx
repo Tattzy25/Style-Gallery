@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Inter, Shadows_Into_Light, Unbounded } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -33,8 +34,9 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, shadowsIntoLight.variable, unbounded.variable)}
     >
-      <body>
+      <body className="!bg-transparent">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

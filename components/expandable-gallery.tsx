@@ -99,7 +99,7 @@ export default function ExpandableGallery() {
   });
 
   return (
-    <section className="relative w-full  px-4 md:px-8 bg-background flex flex-col items-center justify-start min-h-[850px] overflow-hidden">
+    <section className="relative w-full px-4 md:px-8 bg-transparent flex flex-col items-center justify-start min-h-[850px] overflow-hidden">
       <LayoutGroup id={layoutGroupId}>
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
           <div className="w-full h-12 flex items-center justify-between px-4 mb-2">
@@ -120,7 +120,7 @@ export default function ExpandableGallery() {
                       height={20}
                     />
                   </div>
-                  <span className="font-medium">Go back</span>
+                  <span className="font-medium">Close Gallery</span>
                 </motion.button>
               )}
             </AnimatePresence>
